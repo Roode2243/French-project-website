@@ -36,3 +36,51 @@ To run this project locally:
 
    ```bash
    git clone https://github.com/Roode2243/french-project-website.git
+2. **Navigate to the project directory:**
+
+bash
+Copy
+Edit
+cd french-project-website
+3. **Open index.html in your preferred web browser.**
+
+ **Usage**
+Upon opening index.html, you'll be presented with the main page, which includes a navigation menu linking to various topics in French history. Each topic page provides in-depth information, and the quiz page offers an opportunity to test your knowledge.
+
+**Contributing**
+Contributions are welcome! To contribute:
+
+Fork the repository.
+
+Create a new branch:
+
+bash
+Copy
+Edit
+git checkout -b feature/YourFeatureName
+Make your changes.
+
+Commit your changes:
+
+bash
+Copy
+Edit
+git commit -m 'Add some feature'
+Push to the branch:
+
+bash
+Copy
+Edit
+git push origin feature/YourFeatureName
+Open a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+pgsql
+Copy
+Edit
+
+
+Feel free to modify this `README.md` to better fit the specifics of your project.
+::contentReference[oaicite:0]{index=0}
