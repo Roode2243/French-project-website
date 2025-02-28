@@ -3,12 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>French History Class</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your styles here */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is hosted using GitHub Pages.</p>
+    <header>
+        <h1>Welcome to the French History Class</h1>
+        <nav>
+            <ul>
+                <li><a href="conquest.html">Conquest of Gaul</a></li>
+                <li><a href="hundred_years_war.html">Hundred Years' War</a></li>
+                <li><a href="renaissance.html">Renaissance and Humanism</a></li>
+                <li><a href="louis_xiv.html">Louis XIV</a></li>
+                <li><a href="napoleon.html">Napoleon</a></li>
+                <li><a href="colonisation.html">Colonization and Decolonization</a></li>
+                <li><a href="ww1.html">World War I</a></li>
+                <li><a href="ww2.html">World War II</a></li>
+                <li><a href="may_68.html">Student Protests of May 1968</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Quiz</a>
+                    <div class="dropdown-content">
+                        <a href="quiz.html">Take the Quiz</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Toggle Switch for Translucency -->
+
+
+    <main>
+        <section id="conquest">
+            <h2>1. The Conquest of Gaul by Julius Caesar</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Historical context</li>
+                <li>Aims of Julius Caesar</li>
+                <li>Battle of Alesia</li>
+                <li>Impact on France</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Use maps to show the movements of Roman legions.</li>
+                <li>Include diagrams of siege tactics.</li>
+                <li>Integrate primary sources (quotes from "Commentarii de Bello Gallico").</li>
+            </ul>
+            <button onclick="location.href='conquest.html'">Learn More</button>
+        </section>
+
+        <section id="hundred-years-war">
+            <h2>2. The Hundred Years' War and Joan of Arc</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Causes of the war</li>
+                <li>Role of Joan of Arc</li>
+                <li>Battle tactics and national identity</li>
+                <li>Legacy</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Create a timeline of major events of the war.</li>
+                <li>Use portraits and artistic representations of Joan of Arc.</li>
+                <li>Analyze documents from her trial.</li>
+            </ul>
+            <button onclick="location.href='hundred_years_war.html'">Learn More</button>
+        </section>
+
+        <section id="renaissance">
+            <h2>3. The Renaissance and Humanism in France in the 16th Century</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Cultural Renaissance</li>
+                <li>Humanism</li>
+                <li>Architectural and artistic developments</li>
+                <li>Social impact</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Present artworks and architectural sketches.</li>
+                <li>Provide excerpts from literary works of the time.</li>
+                <li>Compare French humanism with its Italian counterpart.</li>
+            </ul>
+            <button onclick="location.href='renaissance.html'">Learn More</button>
+        </section>
+
+        <section id="louis-xiv">
+            <h2>4. Louis XIV: The Sun King</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Absolutism</li>
+                <li>Construction of Versailles</li>
+                <li>Foreign policy and wars</li>
+                <li>Impact on culture and art</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Use images of Versailles and portraits of Louis XIV.</li>
+                <li>Discuss administrative and economic reforms.</li>
+                <li>Analyze the influence of the court on European culture.</li>
+            </ul>
+            <button onclick="location.href='louis_xiv.html'">Learn More</button>
+        </section>
+
+        <section id="napoleon">
+            <h2>5. Napoleon Bonaparte and His Legacy</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Rise to power</li>
+                <li>Reforms and Napoleonic Code</li>
+                <li>Napoleonic Wars</li>
+                <li>Exile and return</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Present maps of military campaigns.</li>
+                <li>Include excerpts from his speeches and letters.</li>
+                <li>Discuss his impact on modern Europe.</li>
+            </ul>
+            <button onclick="location.href='napoleon.html'">Learn More</button>
+        </section>
+
+        <section id="colonisation">
+            <h2>6. Colonization and Decolonization</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>French colonial expansion</li>
+                <li>Impact on colonized countries</li>
+                <li>Decolonization processes</li>
+                <li>Contemporary consequences</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Use graphs to show colonial expansion.</li>
+                <li>Discuss decolonization movements and their leaders.</li>
+                <li>Analyze post-colonial relations.</li>
+            </ul>
+            <button onclick="location.href='colonisation.html'">Learn More</button>
+        </section>
+
+        <section id="ww1">
+            <h2>7. World War I</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Causes and outbreak</li>
+                <li>France's role in the conflict</li>
+                <li>Consequences and Treaty of Versailles</li>
+                <li>Impact on French society</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Present photos and testimonies from soldiers.</li>
+                <li>Use maps to illustrate war fronts.</li>
+                <li>Discuss social and political changes post-war.</li>
+            </ul>
+            <button onclick="location.href='ww1.html'">Learn More</button>
+        </section>
+
+        <section id="ww2">
+            <h2>8. World War II</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>German occupation</li>
+                <li>French resistance</li>
+                <li>Liberation and consequences</li>
+                <li>France's role in reconstruction</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Use videos and documentaries to illustrate events.</li>
+                <li>Discuss key figures of the resistance.</li>
+                <li>Analyze the impacts of the war on French society.</li>
+            </ul>
+            <button onclick="location.href='ww2.html'">Learn More</button>
+        </section>
+
+        <section id="may-68">
+            <h2>9. Student Protests of May 1968</h2>
+            <h3>Key Points</h3>
+            <ul>
+                <li>Social and political context</li>
+                <li>Demonstrations and strikes</li>
+                <li>Impact on French society</li>
+                <li>Cultural legacy</li>
+            </ul>
+            <h3>Presentation Tips</h3>
+            <ul>
+                <li>Use posters and slogans from the time.</li>
+                <li>Discuss the social changes that followed.</li>
+                <li>Analyze the impact on culture and art.</li>
+            </ul>
+            <button onclick="location.href='may_68.html'">Learn More</button>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz</h2>
+            <p>Test your knowledge of French history with our interactive quiz!</p>
+            <button onclick="location.href='quiz.html'">Quiz</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; @2025 French History Class. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
+
+    <script>
+        document.getElementById('translucencyToggle').addEventListener('change', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                // section.classList.toggle('translucent', this.checked);
+
+            });
+        });
+    </script>
 </body>
 </html>
