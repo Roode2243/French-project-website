@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: black;
+    background: rgba(0, 0, 0, 0.5);
     color: white; /* Change header text color to white */
     padding: 20px 0;
     text-align: center;
