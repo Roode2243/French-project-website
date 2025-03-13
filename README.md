@@ -74,13 +74,3 @@ Edit
 git push origin feature/YourFeatureName
 Open a pull request.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-pgsql
-Copy
-Edit
-
-
-Feel free to modify this `README.md` to better fit the specifics of your project.
-::contentReference[oaicite:0]{index=0}
