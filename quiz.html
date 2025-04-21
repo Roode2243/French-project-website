@@ -10,33 +10,103 @@
             background-size: cover; /* Ensure the image covers the entire background */
             background-position: center; /* Center the image */
         }
-    </style>
 
+        /* Popup Styles */
+        #decisionPopup, #qrPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        #decisionPopup button, #qrPopup button {
+            margin-top: 10px;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Quiz on French History</h1>
-
     </header>
     <main>
         <section>
             <h2>Test Your Knowledge!</h2>
 
-            <p>Press the button below to start the quiz.</p>
+            <p>Click the button below to choose an action.</p>
 
-            <button onclick="window.open('https://quizizz.com/join?gc=02100452')">Start Quiz</button>
+            <!-- Single button for decision making -->
+            <button onclick="openDecisionPopup()">Choose Action</button>
 
-            <button onclick="location.href='index.html'">Return to Original Website</button>
+            <!-- Overlay for dimming background -->
+            <div id="overlay"></div>
 
+            <!-- Decision Popup -->
+            <div id="decisionPopup">
+                <p>What would you like to do?</p>
+                <button onclick="showQRCode()">Show QR Code</button>
+                <button onclick="startExam()">Start Exam</button>
+                <button onclick="closeDecisionPopup()">Cancel</button>
+            </div>
 
+            <!-- QR Code Popup -->
+            <div id="qrPopup">
+                <img src="qr_code.png" alt="QR Code for Quiz" style="width:200px; height:200px;">
+                <button onclick="closeQRCode()">Close</button>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; @2025 Classe d'Histoire de France. Tous droits réservés.</p>
     </footer>
-</body>
-    <script src="script.js"></script>
+    <script>
+        // Function to display the decision popup
+        function openDecisionPopup() {
+            document.getElementById('decisionPopup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
 
+        // Function to close the decision popup
+        function closeDecisionPopup() {
+            document.getElementById('decisionPopup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Function to show the QR Code popup
+        function showQRCode() {
+            closeDecisionPopup(); // Close the decision popup first
+            document.getElementById('qrPopup').style.display = 'block';
+        }
+
+        // Function to close the QR Code popup
+        function closeQRCode() {
+            document.getElementById('qrPopup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        // Function to start the exam
+        function startExam() {
+            closeDecisionPopup(); // Close the decision popup first
+            window.open('https://quizizz.com/join?gc=02100452', '_blank'); // Open quiz in a new tab
+        }
+    </script>
+</body>
 </html>
